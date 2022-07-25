@@ -135,8 +135,8 @@ def eta(first_stop, second_stop, route_map):
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     keys = list(route_map.keys())
-    origin = [i for i in zip(*to_from)][0]
-    destination = [i for i in zip(*to_from)][1]
+    origin = [i for i in zip(*keys)][0]
+    destination = [i for i in zip(*keys)][1]
     origin_index = int(origin.index(first_stop))
     destination_index = int(destination.index(second_stop))
     time = []
